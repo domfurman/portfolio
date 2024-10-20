@@ -1,9 +1,124 @@
+@font-face {
+    font-family: 'Font1';
+    src: url('/assets/fonts/Raleway-VariableFont_wght.ttf');
+}
+
 body {
     background-image: url('/assets/images/background-dark.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+
 h1 {
-    color: aqua;
+    color: white;
+    font-family: 'Font1';
+    font-weight: 400;
+    font-size: 50px;
+}
+
+p {
+    color: white;
+    font-family: 'Font1';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.welcome-section {
+    // border: 1px solid white;
+    width: 60vh;
+    // margin: auto;
+    text-align: center;
+    background-color: rgba(59, 59, 59, 0.65);
+    position: absolute;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    font-size: 25px;
+}
+
+.single-link {
+    display: inline-block;
+    margin: 0 15px;
+    color: white;
+    cursor: pointer;
+}
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+// .useful-links a {
+//     position: relative;
+//     display: inline-block;
+//     padding: 10px;
+// }
+
+// .useful-links i {
+//     position: relative;
+//     z-index: 2;
+// }
+
+// .circle-border {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     z-index: 1;
+//     pointer-events: none;
+// }
+
+// .circle-border circle {
+//     fill: none;
+//     stroke: white;
+//     stroke-width: 2;
+//     stroke-dasharray: 126;
+//     stroke-dashoffset: 126;
+//     transition: stroke-dashoffset 0.7s ease;
+// }
+
+// a:hover .circle-border circle {
+//     stroke-dashoffset: 0;
+// }
+
+.useful-links a {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.useful-links i {
+    position: relative;
+    z-index: 2;
+}
+
+.square-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.square-border rect {
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    stroke-dasharray: 160;
+    stroke-dashoffset: 160;
+    transition: stroke-dashoffset 0.9s ease;
+}
+
+a:hover .square-border rect {
+    stroke-dashoffset: 0;
 }

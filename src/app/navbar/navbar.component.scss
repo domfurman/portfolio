@@ -6,16 +6,18 @@
 nav {
     align-items: center;
     padding-top: 2%;
+    padding-bottom: 3%;
 }
 
 .navbar {
     background-color: #3b3b3b;
     display: flex;
     margin: auto;
-    border: 1px solid black;
+    // border: 1px solid black;
     border-radius: 50px;
     width: 35vh;
     justify-content: center;
+    box-shadow: 5px 10px;
 }
 
 .navbar-list {

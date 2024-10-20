@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
@@ -6,7 +6,8 @@ import { NavbarComponent } from '../navbar/navbar.component';
   standalone: true,
   imports: [NavbarComponent],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss'
+  styleUrl: './projects.component.scss',
+  encapsulation: ViewEncapsulation.None
 })
 export class ProjectsComponent {
 
