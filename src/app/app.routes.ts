@@ -10,5 +10,5 @@ export const routes: Routes = [
     // {path: '**', redirectTo: 'home'},
     {path: 'about', component: AboutComponent},
     {path: 'projects', component: ProjectsComponent},
-    {path: 'resume', component: ResumeComponent}
+    // {path: 'resume', component: ResumeComponent}
 ];
