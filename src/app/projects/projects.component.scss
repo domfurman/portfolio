@@ -1,5 +1,97 @@
-body {
-    background-image: url('/assets/images/background-dark.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+// body {
+//     background-image: url('/assets/images/background-dark.jpg');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+// }
+
+@font-face {
+    font-family: 'Font1';
+    src: url('/assets/fonts/Raleway-VariableFont_wght.ttf');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Font1';
+}
+
+h1, h3, h5, p {
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    display: inline-block;
+    border-bottom: 2px solid orange;
+    margin-bottom: 0;
+}
+
+.projects {
+    width: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.project-card {
+    height: 60vh;
+    color: white;
+    background-color: rgba(59, 59, 59, 0.65);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    justify-items: center;
+    border: 2px solid transparent;
+    // box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
+    transition: border-color 0.5s ease, transform 0.5s ease;
+    p {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    i {
+        font-size: 70px;
+    }
+    h5 {
+        font-size: 1.5rem;
+    }
+    &:hover {
+        border-color: orange;
+    }
+}
+
+.github-redirect {
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: none;
+    background-color: #3b3b3b;
+    color: white;
+    text-decoration: none;
+    transition: border-color 0.5s ease, transform 0.5s ease;
+    &:hover {
+        border-color: orange;
+        transform: scale(1.05);
+    }
 }
